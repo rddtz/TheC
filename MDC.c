@@ -9,13 +9,13 @@ int main(){
     long int MDC = 0;
 
     printf("\nA: ");
-    scanf("%d", &A);
+    scanf("%ld", &A);
 
     printf("B: ");
-    scanf("%d", &B);
+    scanf("%ld", &B);
 
-    int holdA = A;
-    int holdB = B;
+    long int holdA = A;
+    long int holdB = B;
 
     //Casos especificos
     if (A == 1 || B == 1){ // MDC(A,1)
@@ -73,7 +73,7 @@ int main(){
 
      //B tem que ser menor que A
 
-    printf("\nMDC(%ld,%ld) = %ld", holdA, holdB, MDC);
+    printf("\nMDC(%ld, %ld) = %ld", holdA, holdB, MDC);
     printf("\nCalculou %d vezes\n", contador);
 
     return 0;
